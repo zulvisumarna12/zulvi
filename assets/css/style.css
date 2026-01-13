@@ -414,3 +414,72 @@ body {
     }
 }
 
+/* ===================== */
+/* RESPONSIVE MOBILE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 5% 0;
+        height: auto;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 22px;
+    }
+
+    .home-img img {
+        max-width: 280px;
+        margin: 30px 0 0;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .skills-container,
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* EXTRA SMALL (HP KECIL) */
+@media (max-width: 480px) {
+
+    .navbar {
+        display: none; /* nanti bisa diganti hamburger */
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .skills-container,
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
